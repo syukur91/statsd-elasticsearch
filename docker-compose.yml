@@ -1,0 +1,20 @@
+version: '2'
+services: 
+   nextflow-statsd:
+     image: registry.gitlab.com/nextflow/nextflow-statsd:latest
+     environment:
+      - ES_PORT_9200_TCP_ADDR=nextflow-elasticsearch
+      - ES_PORT_9200_TCP_PORT=9200
+     ports: 
+      - 8125:8125/udp
+      - 8126:8126
+    #  env_file: 
+    #   - host.env
+     container_name: nextflow-statsd
+     mem_limit: 400M
+
+
+networks:
+  default:
+    external:
+      name: nextflow

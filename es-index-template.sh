@@ -15,6 +15,10 @@ curl -XPUT "${ES_HOST:-localhost}:${ES_PORT:-9200}/_template/statsd-template" -d
                     "type": "long",
                     "index": "not_analyzed"
                 },
+                "tnt": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
                 "ns": {
                     "type": "string",
                     "index": "not_analyzed"
@@ -47,6 +51,10 @@ curl -XPUT "${ES_HOST:-localhost}:${ES_PORT:-9200}/_template/statsd-template" -d
                     "type": "string",
                     "index": "not_analyzed"
                 },
+                "tnt": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
                 "grp": {
                     "type": "string",
                     "index": "not_analyzed"
@@ -69,6 +77,10 @@ curl -XPUT "${ES_HOST:-localhost}:${ES_PORT:-9200}/_template/statsd-template" -d
                 },
                 "val": {
                     "type": "long",
+                    "index": "not_analyzed"
+                },
+                "tnt": {
+                    "type": "string",
                     "index": "not_analyzed"
                 },
                 "ns": {
@@ -161,6 +173,10 @@ curl -XPUT "${ES_HOST:-localhost}:${ES_PORT:-9200}/_template/statsd-template" -d
                 },
                 "bin_inf": {
                     "type": "integer",
+                    "index": "not_analyzed"
+                },
+                "tnt": {
+                    "type": "string",
                     "index": "not_analyzed"
                 },
                 "ns": {
