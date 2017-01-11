@@ -4,7 +4,7 @@ MAINTAINER Christian Blades <christian.blades@careerbuilder.com>
 
 ADD http://nodejs.org/dist/v0.12.1/node-v0.12.1-linux-x64.tar.gz /tmp/node.tgz
 ADD https://github.com/etsy/statsd/archive/v0.7.2.tar.gz /tmp/statsd.tgz
-ADD https://github.com/syukur91/statsd-elasticsearch/archive/0.1.tar.gz /tmp/statsd-elasticsearch.tgz
+ADD https://github.com/syukur91/statsd-elasticsearch/archive/0.1.1.tar.gz /tmp/statsd-elasticsearch.tgz
 
 
 RUN mkdir -p /app

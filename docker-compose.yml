@@ -1,7 +1,7 @@
 version: '2'
 services: 
    nextflow-statsd:
-     image: registry.gitlab.com/nextflow/nextflow-statsd:latest
+     image: syukur91/statsd:0.0.1
      environment:
       - ES_PORT_9200_TCP_ADDR=nextflow-elasticsearch
       - ES_PORT_9200_TCP_PORT=9200
